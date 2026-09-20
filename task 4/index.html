@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>Task 4: Table & Form</h1>
+        <p>CSS styling practice</p>
+    </header>
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../task 1/index.html">Task 1</a>
+        <a href="../task 2/index.html">Task 2</a>
+        <a href="../task 3/index.html">Task 3</a>
+        <a href="../task 4/index.html">Task 4</a>
+        <a href="../task 5/index.html">Task 5</a>
+    </nav>
+    <main class="container">
+        <section class="card">
+            <h2>Student Grades</h2>
+            <table>
+                <tr><th>Name</th> <th>Subject</th> <th>Grade</th></tr>
+                <tr><td>Student 1</td> <td>Frontend</td> <td>A</td></tr>
+                <tr class="highlight-row"><td>Student 2</td> <td>ITP</td> <td>A+</td></tr>
+                <tr><td>Student 3</td> <td>OOP</td> <td>B+</td></tr>
+                <tr><td>Student 4</td> <td>DBMS</td> <td>A-</td></tr>
+                <tr><td colspan="2"><b>Class Average</b></td> <td>A-</td></tr>
+            </table>
+        </section>
+        <section>
+            <h2 id="page-title">Feadback Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                <label for="role">Role</label>
+                <select name="role" id="role">
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Other</option>
+                </select>
+                <label>Was this assignment useful?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="useful" value="yes">Yes</label>
+                    <label><input type="radio" name="useful" value="no">No</label>
+                </div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" placeholder="Write your comments..."></textarea>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+</html>
