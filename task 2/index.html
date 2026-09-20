@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+    .layout-shell{ 
+        overflow: hidden; 
+    }
+    .float-sidebar{ 
+        float: left; 
+        width: 27%; 
+        background: #e0e7ff; 
+        padding: 20px; 
+        border: 1px solid #c7d2fe; 
+        border-radius: 12px; 
+    }
+    .float-main{ 
+        float: right;
+        width: 70%; 
+        background: white; 
+        padding: 24px;
+        border: 1px solid #dbe3ef; 
+        border-radius: 12px; 
+        min-height: 300px; 
+    }
+    .clearfix::after{ 
+        content: ""; 
+        display: table; 
+        clear: both; 
+    }
+    .sidebar-list li{ 
+        margin: 10px 0; 
+    }
+    @media (max-width: 700px) { .float-sidebar, .float-main { float: none; width: 100%; margin-bottom: 15px; } }
+</style>
+</head>
+<body>
+    <header class="banner">
+        <h1>Task 2</h1>
+        <p>Student Developer Hub</p>
+    </header>
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../task 1/index.html">Task 1</a>
+        <a href="../task 2/index.html">Task 2</a>
+        <a href="../task 3/index.html">Task 3</a>
+        <a href="../task 4/index.html">Task 4</a>
+        <a href="../task 5/index.html">Task 5</a>
+    </nav>
+    <main class="container">
+        <div class="layout-shell clearfix">
+            <aside class="float-sidebar">
+                <h2>Menu</h2>
+                <ul class="sidebar-list">
+                    <li>HTML Basics</li>
+                    <li>CSS Styling</li>
+                    <li>Web Projects</li>
+                </ul>
+            </aside>
+            <div class="float-main">
+                <h2>Main Content</h2>
+                <p>This layout uses <strong>div</strong> elements and CSS <strong>float</strong> positioning. Flexbox and Grid are not used in this task.</p>
+                <p>The sidebar is floated left and the main content is floated right. The clearfix keeps the parent container around both floated elements.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+</body>
+</html>
